@@ -47,10 +47,6 @@ app.get("/", (req, res) => {
   res.render("index.ejs", { date: date, tasks: tasks });
 });
 
-app.get("/work", (req, res) => {
-  res.render("index.ejs");
-});
-
 app.post("/add", (req, res) => {
   const task = {
     text: req.body["input"],
